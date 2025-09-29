@@ -1,0 +1,30 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Precomputed caches and large binaries
+precomp/
+*.dill
+*.npz
+*.pkl
+*.npy
+
+# Data folder (keep data in repository only if necessary)
+data/
+
+# IDE/editor
+.vscode/
+
+# Backups
+backups/
