@@ -28,3 +28,9 @@ data/
 
 # Backups
 backups/
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+.eggs/

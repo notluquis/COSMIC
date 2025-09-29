@@ -13,21 +13,27 @@ COSMIC is an open-source software suite built on Python 3.11 and the PyMC librar
 COSMIC is licensed under the AGPL-3.0 License. Please see the [LICENSE.md](LICENSE.md) file for more details.
 
 ## Installation
-_Coming Soon: Detailed installation instructions._
 
-Quick local setup
----------------
+### Editable (developer) install
 
-Create a virtual environment, install dependencies, and run tests:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -e ".[dev]"
+```
+
+The editable install keeps your virtual environment in sync with the repository, so any code changes are reflected immediately without reinstalling the package. The `dev` extra brings in the lightweight tooling needed to run tests.
+
+### Legacy requirements file
+
+If you prefer the older workflow, the pinned dependencies are still available:
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
-pytest -q
 ```
-
-Notes: If you don't need all extras (e.g., Optuna or HDBSCAN) for light testing, you can install only `pytest` first.
 
 ## Usage
 _Coming Soon: A quick start guide and usage examples._
