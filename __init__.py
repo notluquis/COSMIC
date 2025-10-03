@@ -4,7 +4,7 @@ from .clustering import (
     Clustering,
     HDBSCANEstimator,
     FullSplit,
-    _compute_relative_validity_from_mst,
+    compute_relative_validity_from_mst,
 )
 from .data_preprocessor import DataPreprocessor
 from .utils import compare_datasets
@@ -15,7 +15,7 @@ __all__ = [
     'Clustering',
     'HDBSCANEstimator',
     'FullSplit',
-    '_compute_relative_validity_from_mst',
+    'compute_relative_validity_from_mst',
     'DataPreprocessor',
     'compare_datasets',
     'ClusterAnalyzer',

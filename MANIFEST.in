@@ -1,0 +1,27 @@
+include README.md
+include CHANGELOG.md
+include CONTRIBUTING.md
+include LICENSE
+include pyproject.toml
+include requirements.txt
+
+# Include scripts
+recursive-include scripts *.sh *.py
+
+# Include data files if any
+recursive-include data *.ecsv *.npz
+
+# Exclude development and build files
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude *.egg-info
+global-exclude .DS_Store
+global-exclude .git*
+
+# Exclude specific directories
+prune legacy
+prune backups
+prune notebooks
+prune .vscode
+prune dist
+prune build

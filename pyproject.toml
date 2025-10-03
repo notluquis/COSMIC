@@ -4,14 +4,23 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cosmic-cluster-analysis"
-version = "0.1.0"
-description = "COSMIC: clustering and analysis utilities for Gaia-based star cluster studies"
+version = "0.0.1"
+description = "COSMIC: Characterization Of Star clusters using Machine-learning Inference and Clustering"
 readme = "README.md"
 requires-python = ">=3.11"
-license = {file = "LICENSE"}
+license = "AGPL-3.0-or-later"
 authors = [
-  {name = "Lucas Pulgar-Escobar"},
+  {name = "Lucas Pulgar-Escobar", email = "lescobar2019@udec.cl"},
   {name = "Nicolás Henríquez Salgado"}
+]
+keywords = ["astronomy", "clustering", "gaia", "star-clusters", "machine-learning"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Astronomy",
 ]
 dependencies = [
   "hdbscan>=0.8.40",
@@ -33,7 +42,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/COSMIC"
+Homepage = "https://github.com/notluquis/COSMIC"
+Repository = "https://github.com/notluquis/COSMIC"
+Issues = "https://github.com/notluquis/COSMIC/issues"
+Changelog = "https://github.com/notluquis/COSMIC/blob/main/CHANGELOG.md"
 
 [tool.setuptools]
 py-modules = [
